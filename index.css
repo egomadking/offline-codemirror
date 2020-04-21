@@ -1,0 +1,30 @@
+html {
+  background-color: #336699;
+  color: #fff;
+  font-family: 'Helvetica', sans-serif;
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  height: 100vh;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 1em;
+}
+
+main {
+  overflow-y: auto;
+}

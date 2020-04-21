@@ -1,0 +1,25 @@
+{
+  "name": "offline-codemirror",
+  "version": "1.0.0",
+  "description": "offline codemirror environment for those lonely places without text editors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "browser-sync start --server --files=\"**/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egomadking/offline-codemirror.git"
+  },
+  "author": "Roy Mosby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egomadking/offline-codemirror/issues"
+  },
+  "homepage": "https://github.com/egomadking/offline-codemirror#readme",
+  "dependencies": {
+    "@emmetio/codemirror-plugin": "^1.0.0",
+    "codemirror": "^5.52.2"
+  },
+  "devDependencies": {}
+}

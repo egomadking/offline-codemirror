@@ -1,0 +1,26 @@
+.CodeMirror {
+  border: 1px solid white;
+  height: calc(100vh - (200px + 6em));
+}
+
+.CodeMirror-gutter {
+  background-color: #111;
+  border-right: 1px solid #888;
+}
+
+.CodeMirror-selected {
+  color: #333;
+  background-color: #ddd;
+}
+
+.CodeMirror-matchingbracket {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.CodeMirror-matchingtag {
+  background-color: rgba(203, 132, 250, 0.3);
+}
+
+.cm-matchhighlight {
+  background-color: rgba(255, 255, 255, .3);
+}
