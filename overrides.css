@@ -1,3 +1,18 @@
+/*temp for workbench*/
+#editor-wrapper {
+  padding: 1em;
+}
+
+#editor-menus>div>p {
+  margin-top: 0;
+}
+
+main {
+  padding: 1em;
+}
+
+/*end temp for workbench*/
+
 .CodeMirror {
   border: 1px solid white;
   height: calc(100vh - (200px + 6em));

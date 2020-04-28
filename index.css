@@ -28,3 +28,201 @@ footer {
 main {
   overflow-y: auto;
 }
+
+#s4-workspace {
+  overflow-y: hidden;
+}
+
+#editor-wrapper {
+  display: grid;
+  grid-template-rows: 30px auto 100px;
+  margin: 0;
+}
+
+#editor-topbar,
+#editor-menus,
+#editor-mode-toggle,
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#editor-menus {
+  justify-content: space-between;
+  width: 135px;
+  font-size: 1.2em
+}
+
+#editor-menus>div>p {
+  padding: .2em .4em;
+  background-color: #333;
+  width: 65px;
+  text-align: center;
+  border-bottom: 2px solid #555;
+}
+
+#editor-menus li {
+  margin-bottom: 3px;
+  padding: 2px;
+}
+
+#editor-menus li:hover {
+  background-color: #777;
+}
+
+#editor-topbar {
+  justify-content: space-between;
+}
+
+#file-menu,
+#config-menu,
+#edit-menu {
+  position: relative;
+}
+
+
+#file-menu>ul,
+#config-menu>ul,
+#edit-menu>ul {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.2s;
+  z-index: 5;
+  background-color: #444;
+  padding: .5em;
+  list-style: none;
+  top: 10px;
+  width: 110px;
+}
+
+#file-menu>p:hover+ul,
+#config-menu>p:hover+ul,
+#edit-menu>p:hover+ul,
+#file-menu>ul:hover,
+#config-menu>ul:hover,
+#edit-menu>ul:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 150ms;
+}
+
+.sub-menu {
+  position: relative;
+}
+
+.sub-menu p {
+  margin: 0;
+}
+
+.sub-menu ul {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.2s;
+  top: 10px;
+  width: 120px;
+  background-color: #444;
+  list-style: none;
+  left: 70px;
+  padding: .5em;
+}
+
+.sub-menu:hover ul,
+.sub-menu ul:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 150ms;
+}
+
+/************************/
+/****MODE TOGGLE*********/
+/************************/
+
+#editor-mode-toggle {
+  position: relative;
+}
+
+#active-mode {
+  position: absolute;
+  transition-duration: .15s;
+  transition-timing-function: ease-out;
+  top: -3px;
+  min-width: 6.2em;
+  text-align: center;
+  background-color: #01315a;
+  color: #b3dbff;
+  border: 1px solid #015198;
+  padding: 8px 10px;
+  pointer-events: none;
+}
+
+.html-mode {
+  left: 1px;
+}
+
+.css-mode {
+  left: 78px;
+}
+
+.js-mode {
+  left: 154px;
+}
+
+.md-mode {
+  left: 231px;
+}
+
+/*****************/
+/*UTILITY CLASSES*/
+/*****************/
+
+.danger {
+  color: #FF4136;
+  border-color: #581612;
+}
+
+.disabled {
+  color: #777;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.warning {
+  color: #FF851B;
+  border-color: #663000;
+}
+
+
+
+main {
+  padding: .5em;
+}
+
+
+.CodeMirror {
+  border: 1px solid white;
+  height: calc(100vh - 300px);
+}
+
+.CodeMirror-gutter {
+  background-color: #111;
+  border-right: 1px solid #888;
+}
+
+.CodeMirror-selected {
+  color: #333;
+  background-color: #ddd;
+}
+
+.CodeMirror-matchingbracket {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.CodeMirror-matchingtag {
+  background-color: rgba(203, 132, 250, 0.3);
+}
+
+.cm-matchhighlight {
+  background-color: rgba(255, 255, 255, .3);
+}
