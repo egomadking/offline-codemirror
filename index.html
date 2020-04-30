@@ -29,9 +29,12 @@
           <div id="file-menu">
             <p>File</p>
             <ul>
-              <li class="disabled">Open</li>
+              <li>
+                <label id= open-file-label" for="open-file">Open...</label>
+                <input id="open-file" type="file" accept="text/plain" />
+              </li>
               <li class="disabled">Save</li>
-              <li class="disabled">Save as</li>
+              <li onclick="uiControls.saveFileAs()">Save as</li>
               <li
                 class="danger"
                 title="Clearing the editor cannot be undone"
@@ -124,9 +127,10 @@
           clear editor
         </button>
       </nav>
+
+      <main></main>
+      <footer></footer>
     </div>
-    <main></main>
-    <footer></footer>
     <script src="vendor/r.js"></script>
     <!-- <script src="node_modules/codemirror/lib/codemirror.js"></script>
     <script src="node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script> -->
