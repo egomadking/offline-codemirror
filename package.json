@@ -19,7 +19,7 @@
   "homepage": "https://github.com/egomadking/offline-codemirror#readme",
   "dependencies": {
     "@emmetio/codemirror-plugin": "^1.0.0",
-    "codemirror": "^5.52.2",
+    "codemirror": "^5.58.2",
     "file-saver": "^2.0.2"
   },
   "devDependencies": {}
